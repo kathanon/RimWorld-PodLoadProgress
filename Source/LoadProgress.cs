@@ -76,7 +76,7 @@ namespace PodLoadProgress
 
         public override string ToString()
         {
-            return $"{Loaded}/{Total}";
+            return $"{(int) (((float) Loaded) / Total * 100f)}%";
         }
 
         public void Add(LoadProgress add)

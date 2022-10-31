@@ -1,5 +1,5 @@
-﻿using HugsLib.Utils;
-using RimWorld;
+﻿using HugsLib.Settings;
+using HugsLib.Utils;
 
 namespace PodLoadProgress
 {
@@ -14,19 +14,15 @@ namespace PodLoadProgress
 
         internal static Main Instance { get; private set; }
 
-        public override string ModIdentifier => "kathanon.PodLoadProgress";
+        public override string ModIdentifier => Strings.ID;
 
         internal LoadProgressManager Progress { get; } = new LoadProgressManager();
 
+        public SettingHandle<bool> showSeconds;
+
         public override void DefsLoaded()
         {
-            // TODO: load settings
+            showSeconds = Settings.GetHandle<bool>("showSeconds", Strings.ShowSeconds_title, Strings.ShowSeconds_desc, false);
         }
-    }
-
-    static class ExtensionMethods
-    {
-        public static bool GroupIsLoading(this CompTransporter pod) =>
-            pod.LoadingInProgressOrReadyToLaunch && pod.AnyInGroupHasAnythingLeftToLoad;
     }
 }

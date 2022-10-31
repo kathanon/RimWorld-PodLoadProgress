@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<kathanon.PodLoadProgress.ETA>ETA</kathanon.PodLoadProgress.ETA>
+	<kathanon.PodLoadProgress.progress>Progress:</kathanon.PodLoadProgress.progress>
+	<kathanon.PodLoadProgress.showSeconds.title>Show ETA in seconds</kathanon.PodLoadProgress.showSeconds.title>
+	<kathanon.PodLoadProgress.showSeconds.desc>When showing the ETA for loading, also show it in seconds. The normal ETA does not show values less than 0.1 h, but this one does. This is useful together with some mods, that add pods with a timeout and displays that timeout in seconds.</kathanon.PodLoadProgress.showSeconds.desc>
+</LanguageData>

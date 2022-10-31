@@ -1,10 +1,28 @@
 <ModMetaData>
-	<name>PodLoadProgress</name>
+	<name>Pod Loading Progress</name>
 	<author>kathanon</author>
     <packageId>kathanon.PodLoadProgress</packageId>
 	<supportedVersions>
 		<li>1.3</li>
 	</supportedVersions>
-	<description>Displays better information about transport pod load progress.</description>
+	<description>
+Displays better information about transport pod load progress.
+
+In the detail box for a transport pod that is in the progress of being loaded, shows the overall progress of the pod group and an estimate of how long time remains. The ETA is only shown after a few items have been loaded.
+
+Safe to add or remove for a game in progress.
+	</description>
 	<url>https://github.com/kathanon/RimWorld-PodLoadProgress</url>
+
+	<modDependencies>
+		<li>
+			<packageId>UnlimitedHugs.HugsLib</packageId>
+			<displayName>HugsLib</displayName>
+			<downloadUrl>https://github.com/UnlimitedHugs/RimworldHugsLib/releases/latest</downloadUrl>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>UnlimitedHugs.HugsLib</li>
+	</loadAfter>
 </ModMetaData>

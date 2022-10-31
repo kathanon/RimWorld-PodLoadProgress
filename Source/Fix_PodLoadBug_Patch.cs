@@ -6,7 +6,7 @@ using Verse;
 namespace PodLoadProgress
 {
     [HarmonyPatch(typeof(Pawn_CarryTracker), nameof(Pawn_CarryTracker.TryStartCarry), new Type[] { typeof(Thing), typeof(int), typeof(bool) })]
-    public static class Fix_PodLoadBug_Detour
+    public static class Fix_PodLoadBug_Patch
     {
         public static void Postfix(int __result, Pawn_CarryTracker __instance, Thing item, int count, bool reserve)
         {
